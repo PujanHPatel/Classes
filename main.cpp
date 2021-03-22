@@ -36,7 +36,7 @@ int main() {
             else if (strcmp(type, "MOVIE") == 0) {
                 add(&storeMedia, 2);
             }
-            else if (strcmp(type, "VIDEO GAME") == 0) {
+            else if (strcmp(type, "VIDEOGAME") == 0) {
                 add(&storeMedia, 3);
             }
         }
@@ -96,6 +96,7 @@ void add(vector<media*>* storeMedia, int type) {
         storeMedia->push_back(createMovie);
     }
     else if (type == 3) {
+        cin.ignore(100, '\n');
         game* createGame = new game; //add videogame
         cout << "YEAR OF RELEASE?" << endl;
         cin >> *createGame->getYear();

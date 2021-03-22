@@ -177,7 +177,7 @@ void search(vector<media*>* storeMedia) {
                     cout << "DURATION: " << *dynamic_cast<movie*>(*searchThru)->getDuration() << endl;
                 }
                 else if ((*searchThru)->getType() == 3) {
-                    cout << "VIDYA GAME:" << endl;
+                    cout << "VIDEO GAME:" << endl;
                     cout << "YEAR RELEASED: " << *(*searchThru)->getYear() << endl;
                     cout << "PUBLISHED BY: " << dynamic_cast<game*>(*searchThru)->getPublisher() << endl;
                     cout << "TITLE: " << *(*searchThru)->getTitle() << endl;
